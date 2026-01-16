@@ -6,25 +6,19 @@
 <title> Yunting Liu (刘蕴霆)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body onLoad="scrollTo(0,0)">   
-
-
-
+<body onLoad="scrollTo(0,0)">
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="js/respond.min.js"></script><script src="js/html5shiv.js"></script>
-
 <![endif]-->
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -33,9 +27,10 @@
 <script src="js/menucollapse.js"></script>
 <script type="text/javascript" src="js/arrow78.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script>
+$(function(){ $("#papers-content").load("includes/papers-content.html"); });
+</script>
 
-<!-- <body id="page-top" class="index">
- -->
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -58,45 +53,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-             <!--    <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Home<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="index.html">Home</a></li>
-                       <li><a href="bio.html">Short Biography</a></li>
-                        <li><a href="cv.html">CV (Web)</a></li> 
-                        <li><a target="_blank" href="cvLiuY.pdf">CV (PDF)</a></li>
-                    </ul>
-                </li>-->
-               <!--  <li class="page-scroll">
-                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="#publications">Publications</a>
-                </li>
-                <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Publications<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                    <li><a onclick="javascript:reset_menus();$('#tab-3-content').show();" href="#publications">Selected</a></li>
-                        <li><a href="publications/">All</a></li>
-                    </ul>
-                </li> -->
-                 <li class="page-scroll">
+                <li class="page-scroll">
                     <a href="index.html">Home</a>
                 </li>
-
-
-                        <li><a target="_blank" href="CVLiuY.pdf">CV (PDF)</a></li>
-
-
-
-
+                <li><a target="_blank" href="CVLiuY.pdf">CV (PDF)</a></li>
                 <li class="page-scroll">
                     <a href="papers.html">Papers</a>
-                </li>
-                <li class="page-scroll">
-                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="courses.html">Courses</a>
-                </li>
-              
-               
                 </li>
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
@@ -128,10 +90,8 @@
         </div>
         <div align="left" class="col-md-4">
             <h3> <b>Yunting Liu (刘蕴霆) </b>
-               <!-- <h5>Ph.D. Univ. of California - Riverside, USA</h5></h3> -->
 
-            <h4>Associate Professor of Finance (tenured)<br>
-           <!-- Department of Finance<br> -->
+            <h4>Tenured Associate Professor<br>
            Department of Finance<br>
             School of Economics<br>
             Peking University<br>
@@ -146,250 +106,78 @@
             </script><br/>
             Tel: <a href="tel:861062758564">+86(10)-62758564</a><br/>
             Fax: <a href="tel:861062754237">+86(10)-62754237</a><br/>
-           
-           <!--  Directions: <a target="_blank" href="http://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a> -->
             </h4>
         </div>
-
-
     </div>
 </section>
 
-<!-- Home Section -->
+<!-- Intro Section -->
 <section id="intro">
     <div class="container lead">
         <div style="text-align: left; margin-top:30px" class="col-md-12">
-            <!--<h2>Welcome!</h2>-->
-
-          <!--   <i class="noshow" style="display:none;" id="tab-1">
-            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </i> -->
-
-<!--             <div class="allshow" style="display:none;" id="tab-1-content">
-           <hr class="star-primary">
- -->
-            <p class="lead">Yunting Liu is an Associate Professor of Finance (with tenure) at <a target="_blank" href="https://econ.pku.edu.cn//">School of Economics</a>, <a target="_blank" href="http://www.pku.edu.cn/">Peking University</a>. He holds a Ph.D. (2017) and M.A. (2014) in Economics from the <a target="_blank" href="http://www.jhu.edu/">Johns Hopkins University</a> and B.S. in Mathematics and B.A. in Finance with distinction from  <a href="http://www.whu.edu.cn/" target="_blank">Wuhan University</a>. 
+            <p class="lead">Yunting Liu is a Tenured Associate Professor of Finance at <a target="_blank" href="https://econ.pku.edu.cn//">School of Economics</a>, <a target="_blank" href="http://www.pku.edu.cn/">Peking University</a>. He holds a Ph.D. (2017) and M.A. (2014) in Economics from the <a target="_blank" href="http://www.jhu.edu/">Johns Hopkins University</a> and B.S. in Mathematics and B.A. in Finance with distinction from  <a href="http://www.whu.edu.cn/" target="_blank">Wuhan University</a>.
             </p>
             <p>
             His research interests include <b>Asset Pricing, Financial Economics and Macro-Finance </b>
             </p>
             <p>
-           
- <a href="CVLiuY.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
-<!--             <p><a href="bio.html" class="btn-sm btn-primary">Short Biography &raquo;</a>
-              
-<!--             </div>
- -->
-<!--         </div>
- -->    </div>
-</section>
-
-
-
-<!-- Research Section -->
-<section id="publications">
-    <div class="container lead">
-        <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-<!--             <i class="noshow" style="display:none;" id="tab-3">
-                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </i> -->
-<!--             <div class="allshow" style="display:none;" id="tab-3-content"> -->
-            <hr class="star-primary">
-
-            <h2>Publications <!-- <a href="publications/" class="btn btn-primary">All Publications&raquo;</a> --></h2>
-
-            <ul>
-<p style="line-height: 4px;">
-
-    <li> <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S0378426624002577"> Good Idiosyncratic Volatility, Bad Idiosycnratic Volatility, and the Cross-Section of Stock Returns</a>,  <b> Journal of Banking and Finance</b>, Yunting Liu and Yandi Zhu, Vol.170, Jan 2025;   </li>   
-
-
-	  <li> <a target="_blank" href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2020.3884"> The Short-Run and Long-Run Components  of Idiosyncratic Volatility and Stock Returns</a>,  <b> Management Science</b>, Yunting Liu, Vol.68, No.2, pp.1573-1589, 2022;     <a target="_blank" href="./publications/ivreturn_management_science.pdf">  &nbsp  Author's Copy with Appendix</li>
-
-	  	                 <li> <a target="_blank" href="./publications/el_liu.pdf"> The Upward Trend in the Volatility of Firm Productivity Shocks"</a>, <b>Economics Letters</b>,  Yunting Liu,  Vol.163,  pp.68-71, Feburary 2018</li>
-
-      <li> <a target="_blank" href="./publications/naturual_gap.pdf"> 中国自然利率缺口与国债市场定价--风险溢价还是到期收益率投资者需求 (Natural Rate Gap and Bond Pricing: Risk Premium or Reaching for Yield)</a>,  <b> 《管理科学学报》(Journal of Management Science in China)</b>, Yunting Liu， Kangchen Zhao,    Issue.4,  2025;     </li>
-
-
-      <li> <a target="_blank" href="./publications/[3] Asset Digitization.pdf"> 资产数字化、银行风险与“双支柱”调控 (Asset Digitization, Bank Risk and "Two-Pillar" Regulation)</a>,  <b> 《经济研究》(Economic Research Journal)</b>, joint with Dexu He, Qingjun Zhang, Si Chen,    Issue.1,  2023; (featured cover article)    </li>
-
-
-    <li>  <a target="_blank" href="./publications/[4] Micro Uncertainty.pdf"> 中国经济微观不确定性的测度和效应研究 (China’s Micro Uncertainty and its Effect)</a>,  <b> 《经济学动态》(Economic Perspectives)</b>, Yunting Liu and Yandi Zhu,  Issue.1,  2023; (featured cover article)    </li>
-
-
-
-
-    <li> <a target="_blank" href="./publications/[5] Mispricing.pdf"> 股票错误定价、市值管理与上市公司并购行为 (Stock Mispricing, Market Valuation Management and Listed Firms’ M&A)</a>,  <b> 《中国工业经济》(China Industrial Economics)</b>, joint with Dexu He, Min Zeng, Yuhui Wu,  Issue.10,  2022;    </li>
-
-
-              
-
-                <li><a target="_blank" href="./publications/hb_reversal.pdf"> "异质信念, 卖空约束和中国股票市场反转效应 (Heterogeneous Beliefs, Short-Sale Constraints, and Chinese Stock Market Reversals)"</a>,  <b>《财贸经济》 (Finance & Trade Economics)</b>, Yunting Liu and Xiaorong Zhang, Issue.12, 2021;  <!--  <font color="red">(in press)</font> -->   </li>
-
-               
-            </p>
-            </ul>
-            <!-- <p><a href="publications/" class="btn btn-primary">All Publications &raquo;</a>
-            </p> -->
-         <!--    </div> -->
-        </div>
+            <a href="CVLiuY.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
     </div>
 </section>
 
-
-
-
-
-<section id="ddd">
-    <div class="container lead">
-        <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-            <hr class="star-primary">
-
-            <h2> 重要报刊发表<!-- <a href="publications/" class="btn btn-primary">All Publications&raquo;</a> --></h2>
-
- <li><!-- <span class="label label-success">Elsevier InfoSys'16</span> -->  <a target="_blank" href="http://paper.ce.cn/pc/layout/202304/06/node_10.html"> "为何强调扩大有本金和债务约束的金融需求"</a>,  <b>《经济日报》(理论版)</b>, 刘蕴霆，2023年4月6日第10版;  <!--  <font color="red">(in press)</font> -->   </li>
-
-
- <li><!-- <span class="label label-success">Elsevier InfoSys'16</span> -->  <a target="_blank" href="http://dz.jjckb.cn/www/pages/webpage2009/html/2023-06/20/node_9.htm"> "发挥数字技术赋能效应 推动中小企业转型升级"</a>,  <b>《经济参考报》(理论版)</b>, 刘蕴霆，2023年6月20日A08版;  <!--  <font color="red">(in press)</font> -->   </li>
-
-            </ul>
-            <!-- <p><a href="publications/" class="btn btn-primary">All Publications &raquo;</a>
-            </p> -->
-         <!--    </div> -->
-        </div>
-    </div>
-</section>
-
-
-
-<section id="working papers">
- <div class="container lead">
-            <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-         <!--    <i class="noshow" style="display:none;" id="tab-4">
-                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-4-content').toggle();">Working Papers <span class="glyphicon glyphicon-chevron-right"></span></button>
-                            </i>
- <div class="allshow" style="display:none;" id="tab-4-content"> -->
-            <hr class="star-primary">
-
- <h2>Working Papers </h2>          
-<ul>
-
-
-
-
-                     <li> <a target="_blank" href="./publications/real_stock_bond.pdf">"Productivity Risk and the Dynamics of Stock and Bond Returns"</a>, Yunting Liu <!--  <font color="red">(in press)</font> --> ; <i> 
-                     This paper supercedes the paper previously circulated as "The Real and Nominal Determinants of Stock and Bond Returns Comovement" </i></li>
-
- 
-    <li>  <a target="_blank" href="./publications/investment.pdf"> "Idiosyncratic Volatility, Firm Investment and Captial Accumulation"</a>, Yunting Liu <!--  <font color="red">(in press)</font> --></li>
-
-
-
-</ul>
-<!-- </div>
- -->        </div>
-
-</section>
+<!-- Papers content loaded from includes/papers-content.html -->
+<div id="papers-content"></div>
 
 <!-- Courses Section -->
 <section id="courses">
     <div class="container lead">
         <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-<!--             <i class="noshow" style="display:none;" id="tab-1">
-                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </i> -->
-<!--             <div class="noshow" style="display:none;" id="tab-5-content">
- -->            <hr class="star-primary">
-            <h2>Courses <!-- <a href="teaching.html" class="btn btn-primary">More &raquo;</a> --></h2>
+            <hr class="star-primary">
+            <h2>Courses</h2>
             <ul>
-            
                 <li><span class="label label-default">Undergraduate</span> Computer Programming in Financial Engineering</li>
                 <li><span class="label label-default">Master</span> Security Analysis</li>
-                                <li><span class="label label-default">Master</span> Fixed Income Securities</li>
-
+                <li><span class="label label-default">Master</span> Fixed Income Securities</li>
             </ul>
-<!--             </div>
- -->        </div>
+        </div>
     </div>
 </section>
 
-
+<!-- Grants Section -->
 <section id="grants">
     <div class="container lead">
         <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-           <!--  <i class="noshow" style="display:none;" id="tab-2">
-                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Grants  <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </i>
-            <div class="noshow" style="display:none;" id="tab-6-content"> -->
             <hr class="star-primary">
-            <h2>Research Grants <!-- <a href="teaching.html" class="btn btn-primary">More &raquo;</a> --></h2>
+            <h2>Research Grants</h2>
             <ul>
-             <!--    <li><span class="label label-success">EPL646</span> <a href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl646/">Advanced Topics in Databases</a> (Fall)</li>
-                <li><span class="label label-default">EPL446</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl446/">Advanced Database Systems</a></li>
-                <li><span class="label label-success">EPL371</span> <a href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl371/">Systems Programming</a> (Winter)</li>
-               <li><span class="label label-default">EPL342</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl342/">Databases</a></li>
-                <li><span class="label label-success">EPL132</span> <a href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl132">Programming Principles II</a> (Winter)</li>
-                <li><span class="label label-default">EPL111</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl111">Discrete Structures in Computer Science and Computation</a></li>
-                <li><span class="label label-default">EPL035</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl035">Data Structures and Algorithms for ECE</a></li>
-                <li><span class="label label-default">EPL032</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl032">Introduction to Programming and Problem Solving</a></li> -->
-                
-                
-                <li><b>Principal Investigator</b>:  Research on the Relation and Mechanism between Firm Productivity Volatility, Idiosyncratic Return Volatility and Cross-Section of Stock Returns: <b><i>National Science Foundation of China Grant</b> 2020-2022 </i>
-</li>
-<li><b>Main participant</b>:  Insurance Solvency Regulation and Insurer's Risk Decision: <b> <i>National Science Foundation of China Grant</b> 2022-2025 </i>
-</li>
-
-<li><b>Main participant</b>:  The Effects of Economic Uncertainty on Financial Volatility Modeling and Forecasting: a Big Data and Heterogeneity Perspective:  <i><b>National Science Foundation of China Grant</b> 2023-2026 </i>
-</li>
-
-<li><b>Co-Investigator</b>:  Research on Participants Incentives in Carbon and Electricity Markets  under Carbon Peak and Neutrality Goals: <i><b>Peking University New Engineering Discipline Grant</b> 2022 </i>
-</li>
-
-
-
+                <li><b>Principal Investigator</b>:  Construction, Estimation and Application of High-Dimensional Conditional Asset Pricing Models in the Big Data Context: <b><i>National Natural Science Foundation of China, General Project</b> 2026-2029 </i></li>
+                <li><b>Principal Investigator</b>:  Research on the Relation and Mechanism between Firm Productivity Volatility, Idiosyncratic Return Volatility and Cross-Section of Stock Returns: <b><i>National Science Foundation of China Grant</b> 2020-2022 </i></li>
+                <li><b>Main participant</b>:  Insurance Solvency Regulation and Insurer's Risk Decision: <b> <i>National Science Foundation of China Grant</b> 2022-2025 </i></li>
+                <li><b>Main participant</b>:  The Effects of Economic Uncertainty on Financial Volatility Modeling and Forecasting: a Big Data and Heterogeneity Perspective:  <i><b>National Science Foundation of China Grant</b> 2023-2026 </i></li>
+                <li><b>Co-Investigator</b>:  Research on Participants Incentives in Carbon and Electricity Markets  under Carbon Peak and Neutrality Goals: <i><b>Peking University New Engineering Discipline Grant</b> 2022 </i></li>
             </ul>
-<!--             </div>
- -->        </div>
+        </div>
     </div>
 </section>
 
-
-
-<!-- Courses Section -->
+<!-- Awards Section -->
 <section id="awards">
     <div class="container lead">
         <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-          <!--   <i class="noshow" style="display:none;" id="tab-3">
-                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-7-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-right"></span></button>
-            </i>
-            <div class="noshow" style="display:none;" id="tab-7-content"> -->
-
             <hr class="star-primary">
             <h2>Selected Awards </h2>
             <ul>
-            	  <li> <b>Baogang Distinguished Scholar  Award</b>, 2023</li>
-            	  <li> <b>Excellence in  Refereeing Award</b>, Economic Science Journal (《经济科学》), 2021</li>
-                <li><b> Class Advisor Excellence Award </b>, Peking University, China, 2019                </li>
-
-
+                <li><b>Excellence in Doctoral Thesis Advising Award</b>, Peking University, 2025</li>
+                <li> <b>Baogang Distinguished Scholar  Award</b>, 2023</li>
+                <li> <b>Excellence in  Refereeing Award</b>, Economic Science Journal (《经济科学》), 2021</li>
+                <li><b> Class Advisor Excellence Award </b>, Peking University, China, 2019</li>
                 <li><b>Third Prize Teaching Award</b>, Peking University, China, 2017</li>
-                 <li><b>Department Fellowship</b>, Johns Hopkins University, United States, 2014-2017</li>
-                
-                 <li><b>T. Rowe Price Fellowship</b>, Johns Hopkins University, United States, 2011-2014</li>
+                <li><b>Department Fellowship</b>, Johns Hopkins University, United States, 2014-2017</li>
+                <li><b>T. Rowe Price Fellowship</b>, Johns Hopkins University, United States, 2011-2014</li>
             </ul>
-<!--             </div>
- -->        </div>
+        </div>
     </div>
 </section>
-
-
-</footer> -->
 
 </body>
 
